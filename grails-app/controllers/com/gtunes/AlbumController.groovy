@@ -12,6 +12,9 @@ class AlbumController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
+
+        log.info request.servletContext
+
         respond Album.list(params), model:[albumInstanceCount: Album.count()]
     }
 
