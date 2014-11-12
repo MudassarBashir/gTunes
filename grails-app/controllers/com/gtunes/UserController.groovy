@@ -4,5 +4,8 @@ class UserController {
 
     def index() {}
 
-    def register() {}
+    def register() {
+
+        log.info('register method of user controller called.')
+    }
 }

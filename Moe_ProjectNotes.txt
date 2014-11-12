@@ -1,0 +1,7 @@
+Command to start the MySQL server:
+C:\"Program Files"\MySQL\"MySQL Server 5.6"\bin\mysqld
+
+After this a mysql server interaction CLI client can be started.
+
+Command to stop the MySQL server:
+C:\"Program Files"\MySQL\"MySQL Server 5.6"\bin\mysqladmin -u root shutdown
