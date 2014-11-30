@@ -26,12 +26,12 @@ class UserControllerSpec extends Specification {
             params.confirm = 'wrongPassword'
             params.firstName = 'Henry'
             params.lastName = 'Rollins'
-
+        when:
             def model = controller.register()
             def user = model.user
-        expect:
-            assert user.hasErrors()
-            assert 'user.password.dontmatch' == user.errors['password'].code
+        then:
+            user.hasErrors()
+            'user.password.dontmatch' == user.errors['password'].code
     }
 
     void testRegistrationFailed() {
