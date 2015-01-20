@@ -13,7 +13,7 @@ class UrlMappings {
  		"/"(controller:'store')
 
         /**
-         * Moe: Added line below as part of chapter 6 URL Mappings unit testing.
+         * Moe: Added line below as part of chapter 6 URL Mappings testing.
          */
         "/showArtist/$artistName" (controller:'artist', action:'display')
 
