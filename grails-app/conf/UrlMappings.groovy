@@ -12,6 +12,11 @@ class UrlMappings {
 		 to make the 'Store' controller our default starting homepage. */
  		"/"(controller:'store')
 
+        /**
+         * Moe: Added line below as part of chapter 6 URL Mappings unit testing.
+         */
+        "/showArtist/$artistName" (controller:'artist', action:'display')
+
         "500"(view:'/error')
 	}
 }
