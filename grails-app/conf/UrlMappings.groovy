@@ -15,7 +15,7 @@ class UrlMappings {
         /**
          * Moe: Added line below as part of chapter 6 URL Mappings testing.
          */
-        "/showArtist/$artistName" (controller:'artist', action:'display')
+        "/showAlbum/$albumName" (controller:'album', action:'show')
 
         "500"(view:'/error')
 	}
