@@ -26,28 +26,12 @@
          <div id="spinner" class="spinner" style="display:none;">
             <img src="${createLinkTo(dir:'images',file:'spinner.gif')}" alt="Spinner" />
         </div>
-
-        <header id="header">
-            <h1 id="logo"><a href="${createLink(uri: '/')}">gTune</a></h1>
-            <g:if test="${session?.user}">
-                <div id="quickaccess"><a href="#">${session?.user?.firstName}</a>, <g:link controller="user" action="logout">Logout</g:link></div>
-                <nav id="navigation" class="clearfix">
-                    <ul>
-                        <li class="separator"><g:link controller="user" action="music">My Music</g:link></li>
-                        <li><g:link controller="store" action="shop">The Store</g:link></li>
-                    </ul>
-                </nav>
-            </g:if>
-        </header>
-
         <div id="main">
             <g:if test="${session?.user}">
-                <div class="message notice">
-                    You have purchased (${session.user.purchasedSongs?.size() ?: 0}) songs.<br>
-                </div>
+                <g:render template="/user/welcomeMessage"/>
             </g:if>
             <g:layoutBody />
-            <r:layoutResources />
+            <g:javascript library="application"/>
         </div>
 
         <footer id="footer">
