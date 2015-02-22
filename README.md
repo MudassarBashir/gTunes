@@ -9,7 +9,7 @@ heard back. I reached out to him in the first place because the Apress errata pa
 I finished reading the book and my copy contains a huge number of corrections. One of the biggest issues in the book is that
 references to code snippets called 'Listings' in the book is very erroneous. For example a discussion might start about a code
 snippet in say Listing 5-17 but it will be referred to as totally something other such as "We can see that the code in listing
-5-23....'. There were so many of these types of frustrating erros that by Chapter 8 I decided to stop coding along and just finished
+5-23....'. There were so many of these types of frustrating errors that by Chapter 8 I decided to stop coding along and just finished
 reading the book to understand concepts instead.
 
 While a good book to read conceptually. I don't recommend coding along with it.
